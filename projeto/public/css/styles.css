@@ -1,9 +1,9 @@
 :root {
     --button: #231077;
-    --new-job: #4294e656;
+    --job: #4294e656;
     --new-job-label: #2a5f94;
-    --bg-nav: #ffffff;
-    --bg: #ffffff;
+    --bg-nav: #1a1c22;
+    --bg: #1a1c22;
     --branco: #ffffff;
     --preto: #000000;
 }
@@ -13,12 +13,16 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif
   }
+
+  main {
+    background-color: var(--bg) !important;
+  }
   
   /* nav */
-  .navbar  {
+  .navbar {
     background-color: var(--bg-nav) !important;
     padding: 1rem;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid var(--preto);
   }
   
   .navbar .nav-item a {
@@ -51,8 +55,7 @@
   #top-container {
     padding: 110px;
     background-color: #F7F9FC;
-    border-bottom: 4px solid #013068;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     background-image: url("../img/banner2.jpg");
     background-position: 0 100px;
     background-size: cover;
@@ -96,13 +99,14 @@
   
   #jobs-container {
     padding: 0 100px;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
   }
   
   #job-list .list-group-item {
+    background-color: var(--job);
     margin-bottom: 8px;
-    border: 1px solid #CCC;
-    padding: 15px 80px;
+    padding-bottom: 120px;
+    padding-left: 50px;
     color: #212529;
     height: 120px;
     transition: 300ms;
@@ -114,24 +118,26 @@
   }
   
   #job-list .list-group-item p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 5px;
+    font-weight: bold;
   }
   
-  #job-list .list-group-item.new-job {
+  /* #job-list .list-group-item.new-job {
     border: none;
-    background-color: var(--new-job);
-  }
+    
+  } */
   
   #job-list-title {
-    margin-bottom: 35px;
+    color: var(--branco);
+    margin: 35px;
   }
   
   .list-group-item img {
     width: 80px;
     border: 1px solid #212529;
     border-radius: 50%;
-    background-color: #FFF;
+    background-color: var(--bg);
     position: absolute;
     left: -40px;
     top: calc(50% - 40px);
@@ -287,7 +293,7 @@
     }
   
     .list-group-item {
-      padding: 15px 85px;
+      padding: 15px 85px;  
     }
   
     .list-group-item h2 {
@@ -297,7 +303,7 @@
   
     .list-group-item img {
       width: 50px;
-      left: 15px;
+      left: 1px;
       top: calc(50% - 25px);
     }
   
