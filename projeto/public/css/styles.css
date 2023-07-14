@@ -14,6 +14,10 @@
     font-family: Helvetica, sans-serif
   }
 
+  body{
+    background-color: var(--bg) !important;
+  }
+
   main {
     background-color: var(--bg) !important;
   }
@@ -181,22 +185,24 @@
     padding: 50px;
     box-shadow: 0 1px 5px rgba(0,0,0,.15);
     border-radius: 4px;
-    background-color: #FFF;
+    background-color: var(--bg);
     margin-bottom: 50px;
   }
   
   #add-form-container h1 {
+    color: var(--branco);
     margin-bottom: 20px;
   }
   
   #add-form-container h2 {
-    color: var(--button);
+    color: var(--branco);
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 30px;
   }
   
   #add-form-container form label {
+    color: #727272;
     font-weight: bold;
   }
   
@@ -213,10 +219,15 @@
     border-radius: 0;
     margin-top: 20px;
   }
+
+  #text-h1 {
+    color: var(--branco);
+  }
   
   /* job-view */
   
   #job-view-container {
+    background-color: var(--branco) !important;
     margin-top: 100px;
   }
   
